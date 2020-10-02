@@ -21,8 +21,8 @@ module.exports = {
         },
       },
       {
-        test: /\.(jpe?g|png|gif|svg)/, 
-        loader: "file-loader?name=src/img/[name].[ext]"
+        test: /\.(jpe?g|png|gif|svg)/,
+        loader: 'file-loader?name=src/img/[name].[ext]',
       },
       {
         test: /\.html$/,

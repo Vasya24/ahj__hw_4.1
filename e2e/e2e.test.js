@@ -1,3 +1,4 @@
+/* eslint-disable */
 import puppetteer from 'puppeteer';
 
 jest.setTimeout(30000);

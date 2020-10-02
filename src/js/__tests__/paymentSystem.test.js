@@ -1,8 +1,9 @@
-import checkPaymentSystem from '../checkPaymentSystem'
+/* eslint-disable */
+import checkPaymentSystem from "../checkPaymentSystem";
 
-test('Should return valid payment system', () => {
-    let digs = '5536913801114162';
-    checkPaymentSystem(digs)
+test("Should return valid payment system", () => {
+  let digs = "5536913801114162";
+  checkPaymentSystem(digs);
 
-    expect(checkPaymentSystem(digs)).toBe('Mastercard')
-})
+  expect(checkPaymentSystem(digs)).toBe("Mastercard");
+});
