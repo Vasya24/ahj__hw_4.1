@@ -5,10 +5,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>AHJ__HW_4</title>
 </head>
 
 <body>
+    <form data-id="validate-card-form">
+        <ul data-id="validate-card-list">
+            <li class="card">
+                <img src="img/mastercard_curved.png" data-id="mastercard" class="validate-card-img">
+            </li>
+            <li class="card" data-id="visa">
+                <img src="img/visa_curved.png" data-id="visa" class="validate-card-img">
+            </li>
+            <li class="card" data-id="mir">
+                <img src="img/mir.png" data-id="mir" class="validate-card-img">
+            </li>
+        </ul>
+        <input type="text" pattern="[0-9]{16}" required data-id="validate-card-input" placeholder="Enter your 16-digits card number">
+        <input type="submit" data-id="validate-card-submit" value="Click to validate">
+    </form>
 </body>
 
 </html>
