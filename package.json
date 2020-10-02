@@ -1,7 +1,7 @@
 {
-  "name": "ajs",
+  "name": "ahj__hw_4",
   "version": "1.0.0",
-  "description": "",
+  "description": "[![Build status](https://ci.appveyor.com/api/projects/status/ii2o2yu3lja1x349?svg=true)](https://ci.appveyor.com/project/Vasya24/ahj-hw-4-1-32cc1)",
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --mode development",
@@ -18,7 +18,7 @@
     "preshow:dist": "npm run build",
     "show:dist": "live-server dist"
   },
-  "author": "coursar",
+  "author": "Vasya24",
   "license": "MIT",
   "devDependencies": {
     "@babel/cli": "^7.8.4",
@@ -27,9 +27,9 @@
     "babel-jest": "^25.2.4",
     "babel-loader": "^8.1.0",
     "css-loader": "^3.4.2",
-    "eslint": "^6.8.0",
-    "eslint-config-airbnb-base": "^14.1.0",
-    "eslint-plugin-import": "^2.20.2",
+    "eslint": "^7.10.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-import": "^2.22.1",
     "file-loader": "^6.1.0",
     "html-loader": "^1.0.0",
     "html-webpack-plugin": "^4.0.3",
@@ -45,5 +45,13 @@
   },
   "dependencies": {
     "core-js": "^3.6.4"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Vasya24/ahj__hw_4.1.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Vasya24/ahj__hw_4.1/issues"
+  },
+  "homepage": "https://github.com/Vasya24/ahj__hw_4.1#readme"
 }

@@ -13,6 +13,16 @@ input[data-id=validate-card-input] {
     border-radius: 5px;
 }
 
+input[data-id=validate-card-input]:valid {
+    border-color: green;
+    color: green;
+}
+
+input[data-id=validate-card-input]:invalid {
+    border-color: orange;
+    color: red;
+}
+
 input[data-id=validate-card-submit] {
     background-color: #5EB462;
     color: #D3EEC9;
@@ -34,4 +44,11 @@ li {
     width: 102px;
     height: 64px;
     opacity: 0.5;
+    transition: opacity 0.5s ease-in-out 0s;
+}
+
+.active {
+    width: 102px;
+    height: 64px;
+    opacity: 1;
 }

@@ -1,7 +1,7 @@
 import puppetteer from 'puppeteer';
 
 jest.setTimeout(30000);
-describe('INN/OGRN form', () => {
+describe('Card validation form', () => {
   let browser = null;
   let page = null;
   const baseUrl = 'http://localhost:4242';
@@ -19,13 +19,13 @@ describe('INN/OGRN form', () => {
     await browser.close();
   });
 
-  test('should add .valid class for valid inn', async () => {
+  test('should show ', async () => {
     await page.goto(baseUrl);
-    const form = await page.$('[data-widget=innogrn-form-widget]');
-    const input = await form.$('[data-id=innogrn-input]');
-    await input.type('7715964180');
-    const submit = await form.$('[data-id=innogrn-submit]');
+    const form = await page.$('[data-id=validate-card-form]');
+    const input = await form.$('[data-id=validate-card-input]');
+    await input.type('5536913801114162');
+    const submit = await form.$('[data-id=validate-card-submit]');
     submit.click();
-    await page.waitFor('[data-id=innogrn-input].valid');
+    await page.waitFor('[data-id=mastercard].active');
   });
 });
