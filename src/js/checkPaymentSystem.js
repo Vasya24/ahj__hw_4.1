@@ -1,8 +1,8 @@
 /* eslint-disable */
 export default function checkPaymentSystem(digs) {
-let master = document.querySelector('[data-id=mastercard]');
-let visa = document.querySelector('[data-id=visa]');
-let mir = document.querySelector('[data-id=mir]');
+let master = document.querySelector('#mastercard');
+let visa = document.querySelector('#visa');
+let mir = document.querySelector('#mir');
 
   if (digs[0] === '5') {
     master.classList.add('active');
@@ -18,13 +18,11 @@ let mir = document.querySelector('[data-id=mir]');
     mir.classList.add('active');
     visa.classList.remove('active');
     master.classList.remove('active');
-
     return 'Mir';
   } else {
-    // master.classList.remove('active');
-    // visa.classList.remove('active');
-    // mir.classList.remove('active');
-
-    return false;
+    master.classList.remove('active');
+    visa.classList.remove('active');
+    mir.classList.remove('active');
+    return false
   }
 }
