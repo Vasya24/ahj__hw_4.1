@@ -1,7 +1,6 @@
-import checkPaymentSystem, { card, master, visa, mir } from '../checkPaymentSystem'
+import checkPaymentSystem from '../checkPaymentSystem'
 
 test("Should be fine", () => {
-    
-    checkPaymentSystem('5469380001114162');
-    expect(checkPaymentSystem.toBe('Mastercard'))
+    let mir = document.getElementById('mir');
+    expect(mir).toBeDefined()
 })
