@@ -1,0 +1,56 @@
+body {
+    background-color: #BE4D10;
+}
+
+form[data-id=validate-card-form] {
+    position: relative;
+    top: 150px;
+    left: 35%;
+}
+
+input[data-id=validate-card-input] {
+    width: 250px;
+    border-radius: 5px;
+}
+
+input[data-id=validate-card-input]:valid {
+    border-color: green;
+    color: green;
+}
+
+input[data-id=validate-card-input]:invalid {
+    border-color: orange;
+    color: red;
+}
+
+input[data-id=validate-card-submit] {
+    background-color: #5EB462;
+    color: #D3EEC9;
+    font-weight: 400;
+    border-radius: 5px;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+}
+
+li {
+    list-style: none;
+    margin-left: 10px;
+}
+
+.validate-card-img {
+    width: 102px;
+    height: 64px;
+    opacity: 0.5;
+    transition: opacity 0.5s ease-in-out 0s;
+}
+
+.active {
+    width: 102px;
+    height: 64px;
+    opacity: 1;
+}
+
+/*# sourceMappingURL=main.css.map*/
