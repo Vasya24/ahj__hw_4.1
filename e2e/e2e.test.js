@@ -3,8 +3,8 @@ import puppetteer from 'puppeteer';
 
 jest.setTimeout(30000);
 describe('Card validation form', () => {
-  let browser = null;
-  let page = null;
+  let browser;
+  let page;
   const baseUrl = 'http://localhost:4242';
 
   beforeAll(async () => {
