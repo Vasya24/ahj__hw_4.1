@@ -2,15 +2,15 @@
 import puppetteer from 'puppeteer';
 import { fork } from 'child_process';
 
-jest.setTimeout(30000);
+jest.setTimeout(10000);
 describe('Card validation form', () => {
-  let browser = null;
-  let page = null;
-  let server = null;
+  let browser;
+  let page;
+  let server;
   const baseUrl = 'http://localhost:4242';
 
   beforeAll(async () => {
-    server = fork(`${__dirname}/e2e.server.js`);
+    server = fork('e2e/e2e.server.js');
     await new Promise((resolve, reject) => {
       server.on('error', reject);
       server.on('message', (message) => {
@@ -22,7 +22,7 @@ describe('Card validation form', () => {
 
 
     browser = await puppetteer.launch({
-      // headless: true,
+      // headless: false,
       // devtools: true,
     });
     page = await browser.newPage();
@@ -30,6 +30,7 @@ describe('Card validation form', () => {
 
   afterAll(async () => {
     await browser.close();
+    server.kill()
   });
 
   test('Should be Mastercard', async () => {
