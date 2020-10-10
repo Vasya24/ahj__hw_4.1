@@ -1,5 +1,6 @@
 /* eslint-disable */
 import puppetteer from 'puppeteer';
+import { fork } from 'child_process';
 
 jest.setTimeout(30000);
 describe('Card validation form', () => {
@@ -20,8 +21,8 @@ describe('Card validation form', () => {
 
 
     browser = await puppetteer.launch({
-      headless: true,
-      devtools: true,
+      // headless: true,
+      // devtools: true,
     });
     page = await browser.newPage();
   });
