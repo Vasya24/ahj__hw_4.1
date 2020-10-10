@@ -9,9 +9,9 @@ describe('Card validation form', () => {
 
   beforeAll(async () => {
     browser = await puppetteer.launch({
-      headless: true,
-      slowMo: 100,
-      devtools: true,
+      // headless: true,
+      // slowMo: 100,
+      // devtools: true,
     });
     page = await browser.newPage();
   });
