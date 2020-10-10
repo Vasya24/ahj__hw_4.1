@@ -1,7 +1,6 @@
 /* eslint-disable */
 import puppetteer from 'puppeteer';
 import { fork } from 'child_process';
-import { doesNotMatch } from 'assert';
 
 jest.setTimeout(30000);
 describe('Card validation form', () => {
@@ -52,7 +51,7 @@ describe('Card validation form', () => {
     submit.click();
     await page.waitFor('[data-id=visa].active');
   }),
-  test('Should be Mir', async (done) => {
+  test('Should be Mir', async () => {
     const form = await page.$('[data-id=validate-card-form]');
     const input = await form.$('[data-id=validate-card-input]');
     await input.click({clickCount: 16});
@@ -63,5 +62,5 @@ describe('Card validation form', () => {
     await page.waitFor('[data-id=mir].active');
     
   })
-  done()
+
 });
