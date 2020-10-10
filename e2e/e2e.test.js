@@ -4,8 +4,9 @@ import { fork } from 'child_process';
 
 jest.setTimeout(30000);
 describe('Card validation form', () => {
-  let browser;
-  let page;
+  let browser = null;
+  let page = null;
+  let server = null;
   const baseUrl = 'http://localhost:4242';
 
   beforeAll(async () => {
