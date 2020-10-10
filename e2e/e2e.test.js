@@ -61,7 +61,7 @@ describe('Card validation form', () => {
     const submit = await form.$('[data-id=validate-card-submit]');
     submit.click();
     await page.waitFor('[data-id=mir].active');
-    done()
+    
   })
-
+  done()
 });
